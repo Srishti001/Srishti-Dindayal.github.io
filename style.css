@@ -115,6 +115,7 @@ body {
 .hero {
   position: relative;
   overflow: hidden;
+  min-height: 100vh;
   min-height: 100svh;
   display: flex;
   align-items: center;
@@ -371,7 +372,7 @@ body {
   border-radius: 50%;
   border: 3px solid var(--white);
   flex-shrink: 0;
-  box-shadow: 0 0 0 2px;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
 }
 .tl-health { background: var(--accent-violet); box-shadow: 0 0 0 2px var(--accent-violet); }
 .tl-esg { background: var(--accent-teal); box-shadow: 0 0 0 2px var(--accent-teal); }
@@ -703,5 +704,6 @@ body {
   .section { padding: 70px 0; }
   .hero { padding: 90px 0 50px; }
   .hero-card-group { grid-template-columns: 1fr 1fr; }
-  .btn-nav span { display: none; }
+  .btn-nav { font-size: 0; padding: 0.45rem 0.75rem; }
+  .btn-nav::after { content: 'CV'; font-size: 0.8rem; }
 }
